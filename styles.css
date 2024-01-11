@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    
+}
+
+body{
+    background-color: rgb(152, 246, 105);
+}
+
+
+#header{
+    padding-left: 10px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dotted black;
+    width: 100%;
+    font-size:100%;
+    background-color:rgb(156, 236, 232);
+    
+   
+}
+.name{
+    font-family: 'Tangerine';
+    font-weight: bolder;
+    font-size:3cqi;
+}
+nav>ul{
+    padding-left: 70em;
+    padding-top: 15px;
+    display: flex;
+    align-content: center;
+    font-size:large;
+    gap: 30px;
+    list-style:none;
+}
+nav>ul>li>a{ 
+    color:#000000;
+    font-weight: bold;
+    text-decoration: none;
+
+    
+}
+
+
+
+main{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#home{
+    background-color: antiquewhite;
+    display:flex;
+    row-gap: 6em;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: rgb(13, 9, 5);
+    height:100vh;
+    width: 100%;
+}
+.heading1{
+    font-family: 'Tangerine';
+    font-weight: bold;
+    font-size: 7em;
+}
+.heading2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+}
+.heading3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #d0d87d;
+
+}
+#product-wrapper{
+    
+    padding-left: 20px;
+    padding-top: 20px;
+  
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+    
+    
+}
+#product{
+    background-color: #f7ffa0;
+    border:1px solid rgb(41, 190, 56);
+    border-radius: 10px;
+    height: 400px;
+    width: 200px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+
+  
+}
+#product>img{
+    width:350px;
+   aspect-ratio: 16/12;
+
+}
+
+.product-name{
+    color:Black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+.product-description{
+    color:black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+
+
+
+.lemon{
+    background-color: #ffffff;
+    opacity: 0.8;
+    background-image:url('https://img.freepik.com/free-vector/seamless-lemon-pattern-pastel-background_53876-99902.jpg?w=1380&t=st=1704960533~exp=1704961133~hmac=12d51e1797be0913b3a07a9e2ac2b4a680f362794a26255e24a84dcea029f9cf');
+    background-size: 100px 100px;
+    opacity: 50;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+fieldset{
+    background-color: #d8e360;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-color:rgb(156, 40, 59);
+}
+form input[type="submit"] {
+    width: 90px;
+    height: 30px;
+    font-weight: bold;
+}
+form input[type="email"] {
+    width: 250px;
+    height: 20px;
+    font-weight: bold;
+    font-size: medium;
+}
+textarea{
+    height:70px;
+    width: 250px;
+    font-size: large;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+   body{
+    max-width: fit-content;
+   }
+    #home{
+        row-gap: 0;
+        width: 100%;
+    }
+    .heading1{
+        font-size: 5em;
+    }
+    nav>ul{
+        padding-left: 10px;
+    }
+    .name{
+        font-size: xx-large;
+    }
+    #header{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #header-img{
+        height:2vh;
+        width: auto;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav {
+        position: relative;
+        width: 100%;
+        border-right: none;
+    }
+    nav>ul{
+
+        
+        gap: 10px;
+        
+    }
+
+    
+}
