@@ -107,7 +107,7 @@ main{
   
 }
 #product>img{
-    width:350px;
+    width:24em;
    aspect-ratio: 16/12;
 
 }
@@ -187,13 +187,14 @@ footer>p>a{
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
    body{
     max-width: fit-content;
+    padding-left: 0;
    }
     #home{
         row-gap: 0;
-        width: 100%;
+        width: 109vw;
     }
     .heading1{
         font-size: 5em;
@@ -212,21 +213,37 @@ footer>p>a{
         height:2vh;
         width: auto;
     }
-    body{
+
+    #product{
+        width: 102vw;
+    }
+    
+    main{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    }
+
+    #product-wrapper{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: ;
     }
     .nav {
-        position: relative;
-        width: 100%;
+        position: fixed;
+     
         border-right: none;
     }
     nav>ul{
-
-        
-        gap: 10px;
+        gap: 0.9em;
+        font-size: 1em;
         
     }
+     footer{
+        width: 105vw;
+     }
 
     
 }
